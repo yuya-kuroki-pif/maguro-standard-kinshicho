@@ -811,3 +811,62 @@ p:last-child { margin-bottom: 0; }
   .brand img { width: 140px; }
   .brand .brand-sub { display: none; }
 }
+
+/* --------------------------------------------------------------------------
+   Layout polish (PC 1024 / 1280 / 1440 / 1920)
+   -------------------------------------------------------------------------- */
+/* Header: ナビ項目が多いので、ヘッダーだけ幅を広げ、ロゴが縮んでナビと重ならないようにする */
+.site-header .container { max-width: 1440px; }
+.brand { flex-shrink: 0; }
+.global-nav { min-width: 0; }
+.header-actions { flex-shrink: 0; }
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .header-inner { gap: 10px; }
+  .brand { gap: 8px; }
+  .brand img { width: 150px; }
+  .brand .brand-sub { font-size: 13px; letter-spacing: 0.08em; }
+  .nav-list { gap: 0; }
+  .nav-list a, .nav-list button { padding: 8px 6px; font-size: 13px; letter-spacing: 0.02em; }
+  .has-sub > button::after { margin-left: 4px; }
+  .header-actions .btn-reserve { padding: 9px 14px; font-size: 13px; letter-spacing: 0.04em; }
+}
+
+/* Breadcrumb: ol の番号を消す */
+.breadcrumb { list-style: none; padding: 0; margin: 14px 0 0; }
+
+/* Hero: 看板・暖簾の文字と重ならないよう、PC ではテキストを下部の帯に寄せる */
+@media (min-width: 1024px) {
+  .hero {
+    min-height: calc(100vh - var(--header-h));
+    align-items: flex-end;
+  }
+  .hero-bg { object-position: center bottom; }
+  .hero::after {
+    background: linear-gradient(180deg,
+      rgba(0, 14, 36, 0.25) 0%,
+      rgba(0, 14, 36, 0.15) 40%,
+      rgba(0, 14, 36, 0.78) 62%,
+      rgba(0, 14, 36, 0.97) 100%);
+  }
+  .hero-inner { padding: 40px 20px 44px; }
+  .hero-logo { width: 200px; margin-bottom: 10px; }
+  .hero-title { font-size: clamp(28px, 2.2vw, 40px); line-height: 1.4; }
+  .hero-lead { margin-top: 8px; font-size: 16px; }
+  .hero-notice { margin-top: 14px; padding: 10px 22px; }
+}
+
+/* こだわりページの番号付きリスト: ol の番号を消す（見出し側に番号あり） */
+.values { list-style: none; padding: 0; }
+
+/* 姉妹店バナー: 高さの違う 2 枚を中央揃え */
+.sister-banner .banner-row { align-items: center; }
+
+/* 1〜2 文字だけの折り返しを防ぐ（auto-phrase は対応ブラウザのみ文節で折り返す） */
+.sister-card h2, .space-block h2, .course-body h2, .article h2, .feature-body h2, .concept-block h2 { text-wrap: balance; word-break: auto-phrase; }
+.sister-card h2 .nb { display: inline-block; }
+.course-notes, .sister-card .desc, .article p, .feature-body p, .space-block p, .concept-block p, .page-lead, .privacy p, .special-card .notes, .policy-box p { text-wrap: pretty; }
+.course-notes { max-width: 44em; }
+
+/* Media: タグ幅を揃えてタイトルの開始位置を揃える */
+.media-list .tag { min-width: 7em; }
