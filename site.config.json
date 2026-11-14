@@ -1,14 +1,40 @@
 {
   "domain": "maguro-standard-kinshicho.com",
-  "name": "マグロスタンダード 錦糸町",
+  "name": "マグロスタンダード 錦糸町本店",
   "kind": "store",
-  "tagline": "",
-  "address": "",
-  "tel": "",
-  "hours": "",
-  "closed": "",
-  "access": "",
-  "instagram": "",
-  "reservation_url": "",
-  "google_maps_url": ""
+  "brand": "マグロスタンダード",
+  "tagline": "マグロの全てを体験",
+  "hero_title": "マグロまるごと マグロスタンダード",
+  "postal_code": "〒130-0022",
+  "address": "東京都墨田区江東橋2-15-6 ファーストビル1F",
+  "tel": "03-5669-0545",
+  "hours": {
+    "mon_fri": "16:00～24:00(L.O.23:00)",
+    "sat": "13:00～24:00(L.O.23:00)",
+    "sun": "13:00～23:00(L.O.22:00)",
+    "note": "※状況により早締めさせて頂く可能性がございます"
+  },
+  "closed": "なし",
+  "access": "錦糸町駅南口より徒歩3分",
+  "invoice_registered": true,
+  "instagram": "https://www.instagram.com/magurostandardkinshicyo/",
+  "instagram_brand": "https://www.instagram.com/magurostandard/",
+  "reservation_url": "https://yoyaku.tabelog.com/yoyaku/net_booking_form/index?rcd=13283669",
+  "recruit_url": "https://pay-it-forward-corporate.com/recruit/",
+  "google_maps_url": "https://www.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A2%A8%E7%94%B0%E5%8C%BA%E6%B1%9F%E6%9D%B1%E6%A9%8B2-15-6%20%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E3%83%93%E3%83%AB1F",
+  "sister_brand_banner": {
+    "name": "マグロと炉端 成る",
+    "url": "https://maguro-robata-naru.com/",
+    "image": "/images/naru-banner.jpg"
+  },
+  "colors": {
+    "primary": "#0054A6",
+    "secondary": "#0072BC",
+    "navy": "#000E24",
+    "gold": "#C4A44C"
+  },
+  "pages": [
+    "/", "/concept/", "/course/", "/food/", "/drink/", "/table/",
+    "/special/", "/sister-store/", "/media/", "/information/", "/privacy/"
+  ]
 }
