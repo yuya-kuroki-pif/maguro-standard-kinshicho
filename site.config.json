@@ -11,10 +11,11 @@
   "hours": {
     "mon_fri": "16:00～24:00(L.O.23:00)",
     "sat": "13:00～24:00(L.O.23:00)",
-    "sun": "13:00～23:00(L.O.22:00)",
+    "sun_holiday": "13:00～23:00(L.O.22:00)",
     "note": "※状況により早締めさせて頂く可能性がございます"
   },
   "closed": "なし",
+  "seats": "43席（最大45名様）・貸切20～50名様",
   "access": "錦糸町駅南口より徒歩3分",
   "invoice_registered": true,
   "instagram": "https://www.instagram.com/magurostandardkinshicyo/",
